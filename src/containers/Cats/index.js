@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import FormInput from './components/FormInput'
 import { Title } from '../Home/styles'
 
-export const TodoList = () => {
+export const Cats = () => {
   
   // const todos = ["buy apple juice", "practice React", "read a book"]
   const [todos, setTodos] = useState(["buy apple juice", "practice React", "read a book"])

@@ -1,6 +1,7 @@
 import React from 'react'
 import Home from './containers/Home'
-import { TodoList } from './containers/TodoList'
+import { Cats } from './containers/Cats'
+import Dogs from './containers/Dogs'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import theme from './theme'
 import { ThemeProvider } from 'styled-components'
@@ -15,7 +16,8 @@ const App = () => (
           <Route exact path="/">
             {(username) ? <Home name={username}/> : <Home name="stranger"/>}
           </Route>
-          <Route path="/list" component={TodoList}/>
+          <Route path="/cats" component={Cats}/>
+          <Route path="/dogs" component={Dogs}/>
         </Switch>
       </div>
     </ThemeProvider>
